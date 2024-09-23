@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bvdxhspmcse3m"]
+
+[node name="Panel" type="Panel"]
+offset_right = 398.0
+offset_bottom = 43.0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 395.0
+offset_bottom = 44.0
+text = "Module Name"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 162
