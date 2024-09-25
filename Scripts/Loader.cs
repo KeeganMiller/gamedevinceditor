@@ -29,6 +29,11 @@ public partial class Loader : Node2D
         base._Ready();
         Instance = this;
         ReadModules();
+        foreach(var item in Data)
+        {
+            if (item is BaseModule bm)
+                GD.Print(bm.ModuleName);
+        }
     }
 
     /// <summary>
