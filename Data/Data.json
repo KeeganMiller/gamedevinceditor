@@ -1,0 +1,38 @@
+[
+	{
+		"DataCategory": 0,
+		"ModuleName": "Core Mechanic",
+		"ModuleJobType": 0,
+		"IconPath": "",
+		"MinAAA": 75,
+		"MaxAAA": 150,
+		"MinIII": 43,
+		"MaxIII": 82,
+		"MinIndie": 12,
+		"MaxIndie": 22
+	},
+	{
+		"DataCategory": 0,
+		"ModuleName": "Core Shader",
+		"ModuleJobType": 0,
+		"IconPath": "",
+		"MinAAA": 75,
+		"MaxAAA": 150,
+		"MinIII": 43,
+		"MaxIII": 82,
+		"MinIndie": 33,
+		"MaxIndie": 57
+	},
+	{
+		"DataCategory": 0,
+		"ModuleName": "Super Basic AI",
+		"ModuleJobType": 0,
+		"IconPath": "",
+		"MinAAA": 75,
+		"MaxAAA": 150,
+		"MinIII": 43,
+		"MaxIII": 82,
+		"MinIndie": 33,
+		"MaxIndie": 57
+	}
+]
