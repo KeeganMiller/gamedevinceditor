@@ -3,6 +3,7 @@ using System;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
+using GameDevIncEditor.Godot;
 
 namespace GameDevIncEditor;
 
@@ -17,7 +18,6 @@ public enum EDataType
 
 public partial class Loader : Node2D
 {
-    public string ModulesPath { get; private set; } = "res://Data/Data.json";                  // Path to location of the modules file
 
     // Reference to everything loaded
     public List<PropertyData> Data = new List<PropertyData>();
@@ -41,9 +41,9 @@ public partial class Loader : Node2D
     /// </summary>
     private void ReadModules()
     {
-        if(FileAccess.FileExists(ModulesPath))
+        if(FileAccess.FileExists(MainController.Instance.ModulesPath))
         {
-            var file = FileAccess.Open(ModulesPath, FileAccess.ModeFlags.Read);
+            var file = FileAccess.Open(MainController.Instance.ModulesPath, FileAccess.ModeFlags.Read);
             if(file != null && file.IsOpen())
             {
                 var lines = file.GetAsText();

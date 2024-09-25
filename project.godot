@@ -14,6 +14,10 @@ config/name="GameDevIncEditor"
 config/features=PackedStringArray("4.3", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Loader="*res://Scripts/Loader.cs"
+
 [dotnet]
 
 project/assembly_name="GameDevIncEditor"
