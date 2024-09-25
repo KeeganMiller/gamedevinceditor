@@ -9,6 +9,5 @@ public partial class MainController : Node2D
     public override void _Ready()
     {
         base._Ready();
-        Loader.ReadModules();
     }
 }
