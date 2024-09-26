@@ -1,6 +1,5 @@
 [
 	{
-		"DataCategory": 0,
 		"ModuleName": "Core Mechanic",
 		"ModuleJobType": 0,
 		"IconPath": "",
@@ -9,10 +8,10 @@
 		"MinIII": 43,
 		"MaxIII": 82,
 		"MinIndie": 12,
-		"MaxIndie": 22
+		"MaxIndie": 22,
+		"Id": 0
 	},
 	{
-		"DataCategory": 0,
 		"ModuleName": "Core Shader",
 		"ModuleJobType": 0,
 		"IconPath": "",
@@ -21,10 +20,10 @@
 		"MinIII": 43,
 		"MaxIII": 82,
 		"MinIndie": 33,
-		"MaxIndie": 57
+		"MaxIndie": 57,
+		"Id": 0
 	},
 	{
-		"DataCategory": 0,
 		"ModuleName": "Super Basic AI",
 		"ModuleJobType": 0,
 		"IconPath": "",
@@ -33,6 +32,19 @@
 		"MinIII": 43,
 		"MaxIII": 82,
 		"MinIndie": 33,
-		"MaxIndie": 57
+		"MaxIndie": 57,
+		"Id": 0
+	},
+	{
+		"ModuleName": "Hello, World",
+		"ModuleJobType": 0,
+		"IconPath": "",
+		"MinAAA": 82,
+		"MaxAAA": 94,
+		"MinIII": 13,
+		"MaxIII": 45,
+		"MinIndie": 13,
+		"MaxIndie": 20,
+		"Id": 0
 	}
 ]

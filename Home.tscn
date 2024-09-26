@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://dnptxhsl3cmai"]
+[gd_scene load_steps=2 format=3 uid="uid://dnptxhsl3cmai"]
+
+[ext_resource type="Texture2D" uid="uid://b0pa87vxb5r2b" path="res://MainBackground.png" id="1_iogfe"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -8,17 +10,48 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ScrollContainer" type="ScrollContainer" parent="."]
-layout_mode = 2
-offset_right = 628.0
-offset_bottom = 648.0
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_iogfe")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
-custom_minimum_size = Vector2(0, 200)
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-alignment = 1
+[node name="ModulesBtn" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 219.0
+offset_right = 391.0
+offset_bottom = 291.0
+text = "Modules"
 
-[node name="VScrollBar" type="VScrollBar" parent="ScrollContainer/VBoxContainer"]
-layout_mode = 2
+[node name="Companies" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 304.0
+offset_right = 391.0
+offset_bottom = 376.0
+text = "Companies"
+
+[node name="NamesBtn" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 392.0
+offset_right = 391.0
+offset_bottom = 464.0
+text = "Names"
+
+[node name="SaveBtn" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 480.0
+offset_right = 391.0
+offset_bottom = 552.0
+text = "Save"
+
+[node name="ExitBtn" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 573.0
+offset_right = 391.0
+offset_bottom = 645.0
+text = "Exit"

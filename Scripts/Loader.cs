@@ -28,22 +28,17 @@ public partial class Loader : Node2D
     {
         base._Ready();
         Instance = this;
-        ReadModules();
-        foreach(var item in Data)
-        {
-            if (item is BaseModule bm)
-                GD.Print(bm.ModuleName);
-        }
     }
 
     /// <summary>
     /// Read the data file and obtains the data in class
     /// </summary>
-    private void ReadModules()
+    public void ReadData()
     {
-        if(FileAccess.FileExists(MainController.Instance.ModulesPath))
+        Data.Clear();
+        if(FileAccess.FileExists(MainController.Instance.DataPath))
         {
-            var file = FileAccess.Open(MainController.Instance.ModulesPath, FileAccess.ModeFlags.Read);
+            var file = FileAccess.Open(MainController.Instance.DataPath, FileAccess.ModeFlags.Read);
             if(file != null && file.IsOpen())
             {
                 var lines = file.GetAsText();

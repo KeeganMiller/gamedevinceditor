@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bvdxhspmcse3m"]
 
-[node name="Panel" type="Panel"]
+[node name="Panel" type="Button"]
 offset_right = 398.0
 offset_bottom = 43.0
 

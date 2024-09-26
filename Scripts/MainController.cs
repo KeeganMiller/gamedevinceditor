@@ -7,14 +7,16 @@ namespace GameDevIncEditor.Godot;
 
 public partial class MainController : Node2D
 {
-    public string ModulesPath { get; private set; } = "C:/Users/KAMil/Documents/gamedevinceditor/Data/Data.json";                  // Path to location of the modules file
+    // TODO: Change path to wherever the game is stored
+    public string DataPath { get; private set; } = "C:/Users/KAMil/Documents/gamedevinceditor/Data/Data.json";                  // Path to location of the modules file
 
     public static MainController Instance { get; private set; }
 
     public override void _Ready()
     {
         base._Ready();
-        Instance = this; 
+        Instance = this;
+        Loader.Instance.ReadData();
     }
 
     public override void _Process(double delta)

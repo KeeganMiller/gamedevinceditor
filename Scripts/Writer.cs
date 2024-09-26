@@ -35,9 +35,9 @@ public partial class Writer : Node
 
         updatedData += "]";
 
-        if(File.Exists(MainController.Instance.ModulesPath))
+        if(File.Exists(MainController.Instance.DataPath))
         {
-            File.WriteAllText(MainController.Instance.ModulesPath, updatedData);
+            File.WriteAllText(MainController.Instance.DataPath, updatedData);
             WriteFileEvent?.Invoke();
             return EWriteToFileResult.Success;
         } else
